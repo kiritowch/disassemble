@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 void success() { puts("You Hava already controlled it."); }
-void vulnerable() {
+int vulnerable() {
   char s[12];
   gets(s);
   puts(s);
-  return;
+  return 1;
 }
 int main(int argc, char **argv) {
-  vulnerable();
+int a;  
+a = vulnerable();
+printf("%d", a);
   return 0;
 }
