@@ -3,7 +3,8 @@
 void success() { puts("You Hava already controlled it."); }
 int vulnerable() {
   char s[12];
-  gets(s);
+  //gets(s);
+  fgets(s, 50, stdin);
   puts(s);
   return 1;
 }
